@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="255dp"
+    android:layout_height="285dp"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentTop="true"
+    android:layout_marginLeft="78dp"
+    android:layout_marginTop="200dp"
+    android:background="#BFF8A427">
+
+    <EditText
+        android:id="@+id/user_mail"
+        android:layout_width="196dp"
+        android:layout_height="1dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="27dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="100dp"
+        android:textColor="#222222"
+        android:hint="password"
+        android:backgroundTint="#FFFFFF"
+        android:gravity="left"/>
+
+    <EditText
+        android:id="@+id/user_password"
+        android:layout_width="196dp"
+        android:layout_height="1dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="27dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="150dp"
+        android:textColor="#222222"
+        android:hint="password"
+        android:backgroundTint="#FFFFFF"
+        android:inputType="textPassword"
+        android:gravity="left"/>
+
+    <Button
+        android:id="@+id/go_login"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="left"
+        android:layout_marginLeft="27dp"
+        android:layout_marginTop="200dp"
+        android:text="GO"
+        android:background="@drawable/round_button"/>
+
+</RelativeLayout>

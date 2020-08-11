@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#F8A427"
+    tools:context=".Profile">
+    
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="#FFFFFF"
+        app:cardCornerRadius="15dp">
+
+        <ImageView
+            android:id="@+id/profile_image_holder"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#222" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/profile_info_holder"
+            android:layout_width="342dp"
+            android:layout_height="180dp"
+            android:layout_marginTop="400dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="55dp"
+            android:background="@drawable/card_corner_border"
+            android:animateLayoutChanges="true">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp">
+
+                    <LinearLayout
+                        android:id="@+id/name_linear"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:id="@+id/nick_name"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:textAllCaps="true"
+                            android:gravity="start"
+                            android:maxLines="2"
+                            android:lines="2"/>
+
+                        <TextView
+                            android:id="@+id/prof_age"
+                            android:layout_width="40dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:textAllCaps="true"
+                            android:baselineAlignBottom="true"/>
+
+                        <ImageView
+                            android:id="@+id/prefernce_image"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="0dp"                            android:layout_alignParentBottom="true"
+                            android:layout_marginStart="5dp"
+                            android:baselineAlignBottom="true"/>
+
+                        <ImageButton
+                            android:id="@+id/edit_profile_btn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:baselineAlignBottom="true"
+                            android:layout_marginRight="0dp"/>
+
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/profile_divider"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@id/name_linear"
+                        android:layout_marginTop="5dp"
+                        android:background="#222222"/>
+
+                    <TextView
+                        android:id="@+id/profile_description"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/profile_divider"
+                        android:layout_marginTop="10dp"
+                        android:gravity="top"
+                        android:lines="4"
+                        android:maxLines="4"/>
+
+                </RelativeLayout>
+
+            </FrameLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
